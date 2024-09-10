@@ -1,0 +1,387 @@
+/* Estilo geral do cabeçalho */
+.header {
+    background: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto */
+    padding: 15px 20px; /* Espaçamento interno do cabeçalho */
+    display: flex; /* Usar flexbox para o layout */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-between; /* Distribui os itens igualmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra abaixo do cabeçalho */
+}
+
+/* Botão de alternância da barra lateral */
+.menu-toggle {
+    font-size: 24px; /* Tamanho do ícone do menu */
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    color: #fff; /* Cor do ícone */
+    cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão */
+    transition: color 0.3s ease; /* Transição suave para a cor do ícone */
+}
+
+.menu-toggle:hover {
+    color: #ccc; /* Cor do ícone ao passar o mouse */
+}
+
+/* Botão de alternância do modo escuro */
+#toggle-dark-mode {
+    background: #444; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+#toggle-dark-mode:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do contêiner da barra de pesquisa */
+.search-bar-container {
+    flex-grow: 1; /* Permite que a barra de pesquisa ocupe o espaço disponível */
+    margin-left: 20px; /* Espaçamento à esquerda do contêiner */
+}
+
+/* Barra de pesquisa */
+.search-bar {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda ao redor da barra de pesquisa */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #fff; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ao redor da barra de pesquisa */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave para a borda e sombra */
+}
+
+.search-bar:focus {
+    border-color: #666; /* Cor da borda quando a barra de pesquisa está em foco */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Sombra mais forte quando em foco */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+/* Estilo da seção de cursos */
+.course-thumbnails {
+    margin: 20px auto; /* Centraliza a seção com uma margem superior e inferior */
+    padding: 20px; /* Adiciona espaçamento interno ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto dentro da seção */
+}
+
+.course-thumbnails h2 {
+    font-size: 24px; /* Define o tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #333; /* Cor do texto do título */
+}
+
+/* Grid de thumbnails */
+.thumbnail-grid {
+    display: flex; /* Usa flexbox para layout flexível */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    gap: 20px; /* Espaço entre os itens do grid */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+/* Estilo da seção de módulos */
+.module-section {
+    margin: 20px auto; /* Centraliza a seção com uma margem superior e inferior */
+    padding: 20px; /* Adiciona espaçamento interno ao redor do conteúdo */
+    background-color: #f8f8f8; /* Cor de fundo sutil para a seção */
+    border-radius: 8px; /* Bordas arredondadas para a seção */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor da seção */
+}
+
+/* Título da seção de módulos */
+.module-section h2 {
+    font-size: 24px; /* Define o tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #333; /* Cor do texto do título */
+    text-align: center; /* Centraliza o título */
+}
+
+/* Grid de módulos */
+.module-grid {
+    display: flex; /* Usa flexbox para layout flexível */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    gap: 20px; /* Espaço entre os itens do grid */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo dos módulos */
+.module {
+    display: block; /* Garante que o link seja exibido como um bloco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Herda a cor do texto dos elementos pai */
+    background: #fff; /* Cor de fundo do módulo */
+    border: 1px solid #ddd; /* Borda sutil ao redor do módulo */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do módulo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para efeitos de hover */
+    width: 280px; /* Largura fixa do módulo */
+    height: 160px; /* Altura fixa do módulo */
+    position: relative; /* Posicionamento relativo para sobreposição */
+}
+
+/* Ajusta a imagem do módulo */
+.module img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+    height: 100%; /* Garante que a imagem ocupe toda a altura do container */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+}
+
+/* Informações do módulo */
+.module-info {
+    padding: 15px; /* Espaçamento interno ao redor do texto */
+    text-align: center; /* Centraliza o texto dentro do bloco de informações */
+    background-color: #fff; /* Cor de fundo do bloco de informações */
+    border-top: 1px solid #ddd; /* Borda superior para delimitar a área de informações */
+    border-radius: 0 0 8px 8px; /* Bordas arredondadas na parte inferior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra leve ao redor da área de informações */
+}
+
+.module-info p {
+    font-size: 14px; /* Tamanho da fonte para a descrição */
+    margin: 0; /* Remove a margem padrão abaixo do parágrafo */
+    color: #333; /* Cor do texto da descrição */
+    line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
+    font-weight: 500; /* Define um peso de fonte mais alto para o texto */
+}
+
+/* Efeito de hover para os módulos */
+.module:hover {
+    transform: scale(1.03); /* Aumenta o tamanho do módulo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para efeito de destaque */
+}
+/* Estilo da seção de vídeos */
+.video-section {
+    margin: 20px auto; /* Centraliza a seção com uma margem superior e inferior */
+    padding: 20px; /* Adiciona espaçamento interno ao redor do conteúdo */
+    background-color: #f8f8f8; /* Cor de fundo sutil para a seção */
+    border-radius: 8px; /* Bordas arredondadas para a seção */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor da seção */
+}
+
+/* Título da seção de vídeos */
+.video-section h2 {
+    font-size: 24px; /* Define o tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #333; /* Cor do texto do título */
+    text-align: center; /* Centraliza o título */
+}
+
+/* Grid de vídeos */
+.video-grid {
+    display: flex; /* Usa flexbox para layout flexível */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    gap: 20px; /* Espaço entre os itens do grid */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo dos vídeos */
+.video {
+    display: block; /* Garante que o link seja exibido como um bloco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Herda a cor do texto dos elementos pai */
+    background: #fff; /* Cor de fundo do vídeo */
+    border: 1px solid #ddd; /* Borda sutil ao redor do vídeo */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do vídeo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para efeitos de hover */
+    width: 320px; /* Largura fixa do vídeo */
+    height: 180px; /* Altura fixa do vídeo */
+    position: relative; /* Posicionamento relativo para sobreposição */
+}
+
+/* Ajusta o iframe do vídeo */
+.video iframe {
+    width: 100%; /* Garante que o iframe ocupe toda a largura do container */
+    height: 100%; /* Garante que o iframe ocupe toda a altura do container */
+    border: none; /* Remove a borda do iframe */
+}
+
+/* Informações do vídeo */
+.video-info {
+    padding: 10px; /* Espaçamento interno ao redor do texto */
+    text-align: center; /* Centraliza o texto dentro do bloco de informações */
+    background-color: #fff; /* Cor de fundo do bloco de informações */
+    border-top: 1px solid #ddd; /* Borda superior para delimitar a área de informações */
+    border-radius: 0 0 8px 8px; /* Bordas arredondadas na parte inferior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra leve ao redor da área de informações */
+}
+
+.video-info p {
+    font-size: 14px; /* Tamanho da fonte para a descrição */
+    margin: 0; /* Remove a margem padrão abaixo do parágrafo */
+    color: #333; /* Cor do texto da descrição */
+    line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
+    font-weight: 500; /* Define um peso de fonte mais alto para o texto */
+}
+
+/* Efeito de hover para os vídeos */
+.video:hover {
+    transform: scale(1.03); /* Aumenta o tamanho do vídeo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para efeito de destaque */
+}
+/* Estilo do rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 20px; /* Espaçamento interno ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto */
+    border-top: 1px solid #444; /* Borda superior para delimitar o rodapé */
+    position: relative; /* Posicionamento relativo para garantir que fique no final da página */
+    bottom: 0; /* Alinha o rodapé ao fundo da página */
+    width: 100%; /* Ocupa toda a largura da página */
+}
+
+/* Links do rodapé */
+footer a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin: 0 10px; /* Espaço entre os links */
+    font-size: 14px; /* Tamanho da fonte dos links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Informações do rodapé */
+.footer-info {
+    margin-bottom: 10px; /* Espaço abaixo das informações */
+}
+
+.footer-info p {
+    margin: 5px 0; /* Margem ao redor dos parágrafos */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Seção de links de redes sociais */
+.social-links {
+    margin-top: 10px; /* Espaço acima dos links de redes sociais */
+}
+
+.social-links a {
+    display: inline-block; /* Exibe os ícones como blocos inline */
+    margin: 0 5px; /* Espaço entre os ícones */
+    font-size: 20px; /* Tamanho dos ícones */
+    color: #fff; /* Cor dos ícones */
+    transition: color 0.3s ease; /* Transição suave para a cor dos ícones */
+}
+
+.social-links a:hover {
+    color: #ccc; /* Muda a cor dos ícones ao passar o mouse */
+}
+
+/* Para garantir que o rodapé fique sempre no fundo da página */
+html, body {
+    height: 100%; /* Garante que o corpo da página ocupe toda a altura */
+    margin: 0; /* Remove margens padrão */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+}
+
+main {
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+}
+/* Estilo Global */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão da página */
+    color: #333; /* Cor padrão do texto */
+    background-color: #f4f4f4; /* Cor de fundo da página */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamento padrão */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura total */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    padding: 15px 20px; /* Espaçamento interno */
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinha itens verticalmente */
+    justify-content: space-between; /* Alinha itens horizontalmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra leve */
+    position: fixed; /* Fixa o cabeçalho no topo */
+    width: 100%; /* Ocupa toda a largura da página */
+    top: 0; /* Alinha ao topo da página */
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros conteúdos */
+}
+
+/* Conteúdo Principal */
+main {
+    margin-top: 60px; /* Espaço para o cabeçalho fixo */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo do conteúdo principal */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilo dos Botões */
+button {
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Barra de Pesquisa */
+.search-bar-container {
+    flex-grow: 1; /* Permite que a barra de pesquisa ocupe o espaço disponível */
+    margin-left: 20px; /* Espaçamento à esquerda */
+}
+
+.search-bar {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #fff; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.search-bar:focus {
+    border-color: #666; /* Muda a cor da borda ao focar */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilo das Imagens */
+img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+/* Modo Escuro */
+.dark-mode {
+    background-color: #121212; /* Cor de fundo para o modo escuro */
+    color: #e0e0e0; /* Cor do texto para o modo escuro */
+}
+
+.dark-mode header {
+    background-color: #1f1f1f; /* Cor de fundo do cabeçalho no modo escuro */
+}
+
+.dark-mode .thumbnail {
+    background-color: #1e1e1e; /* Cor de fundo dos thumbnails no modo escuro */
+    border-color: #333; /* Cor da borda dos thumbnails no modo escuro */
+}
+
+.dark-mode .search-bar {
+    background-color: #333; /* Cor de fundo da barra de pesquisa no modo escuro */
+    color: #fff; /* Cor do texto da barra de pesquisa no modo escuro */
+    border-color: #555; /* Cor da borda da barra de pesquisa no modo escuro */
+}

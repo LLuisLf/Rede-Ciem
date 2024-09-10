@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Estudos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Menu Lateral -->
+
+
+
+
+<div class="sidebar">
+    <button id="closeSidebar" class="close-btn">&times;</button>
+    <ul>
+                <li class="submenu-container">
+                    <a href="#"><i class="fas fa-home"></i> Home</a></li>
+
+
+                <li class="submenu-container">
+                    <a href="#"><i class="fas fa-user"></i> Perfil</a></li>
+
+
+                    <li class="submenu-container">
+                        <a href="#" class="submenu-toggle"><i class="fas fa-cogs"></i> Configurações</a>
+                        <ul class="submenu"> a
+                            <li><a href="#" id="toggle-dark-mode"><i class="fas fa-moon"></i> Modo Escuro</a></li>
+                            <!-- Outros itens do submenu -->
+                        </ul>
+                    </li>
+                    
+                
+
+                <li class="submenu-container">
+                    <a href="#"><i class="fas fa-envelope"></i> Notificações</a></li>
+
+
+                <li class="submenu-container">
+                    <a href="#" class="toggle-courses" data-subject="natureza"><i class="fas fa-leaf"></i> Cursos de Natureza</a></li>
+
+
+                <li class="submenu-container">
+                    <a href="#" class="toggle-courses" data-subject="humanas"><i class="fas fa-brain"></i> Cursos de Humanas</a></li>
+
+
+                <li class="submenu-container">
+                    <a href="#" class="toggle-courses" data-subject="linguagens"><i class="fas fa-language"></i> Cursos de Linguagens</a></li>
+
+
+                <li class="submenu-container">
+                    <a href="#" class="toggle-courses" data-subject="matematica"><i class="fas fa-squarespace"></i> Cursos de Matemática</a></li>
+
+
+                <li class="submenu-container">
+                    <a href="#" class="toggle-courses" data-subject="redacao"><i class="fas fa-pencil-alt"></i> Cursos de Redação</a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+    <!-- Conteúdo Principal -->
+
+    <header>
+        <!-- Logo da Plataforma -->
+           
+        <button id="toggleSidebar" class="menu-toggle">☰</button>
+
+         <div class="logo-container">
+                <img src="imagens/logo.webp" alt="Logo da Plataforma" class="logo">
+            </div>
+            
+        <section class="search-bar-container">
+            <input type="text" id="search-bar" class="search-bar" placeholder="Pesquisar cursos...">
+            <button class="search-bar-button"><i class="fas fa-search"></i></button>
+        </section>
+    
+        <!-- Botão de Notificação -->
+        <button class="notification-btn">
+            <i class="fas fa-bell"></i>
+            <span class="badge">3</span> <!-- Exemplo de número de notificações -->
+        </button>
+    
+        <!-- Botão de Perfil -->
+        <div class="profile-btn">
+            <img src="imagens/avatar.webp" alt="Perfil">
+            <span class="profile-name">Nome do Usuário</span> <!-- Nome do usuário visível ao ativar -->
+        </div>
+    </header>
+    
+    <main class="homepage">
+        <section class="course-categories">
+            <h2>ESTUDE mais</h2>
+            <div class="category-container">
+                <!-- Categoria: Para Você -->
+                <div class="category-section">
+                    <h3>Categoria Exemplo</h3>
+                    <div class="thumbnail-container">
+                          <button class="nav-button left"></button>
+                        <div class="thumbnail-grid" id="category-example">
+                            <a href="catalogo.html" class="thumbnail">
+                                <img src="imagens/exemplo.webp" alt="Curso de Biologia">
+                            </a>
+                            <a href="catalogo.html" class="thumbnail">
+                                <img src="imagens/exemplo.webp" alt="Curso de Física">
+                            </a>
+                            <a href="catalogo.html" class="thumbnail">
+                                <img src="imagens/exemplo.webp" alt="Curso de Matemática">
+                            </a>
+                            <a href="catalogo.html" class="thumbnail">
+                                <img src="imagens/exemplo.webp" alt="Curso de Redação">
+                            </a>
+                            <a href="catalogo.html" class="thumbnail">
+                                <img src="imagens/exemplo.webp" alt="Curso de Português">
+                            </a>
+                        </div>
+                      
+                        <button class="nav-button right"></button>
+                    </div>
+                </div>
+
+                <!-- Outras Categorias -->
+                <div class="category-section">
+                    <h3>Mais Vistos</h3>
+                    <div class="thumbnail-grid" id="category-mais-vistos">
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Biologia">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Física">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Matemática">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Redação">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Português">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="category-section">
+                    <h3>Em Alta</h3>
+                    <div class="thumbnail-grid" id="category-em-alta">
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Biologia">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Física">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Matemática">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Redação">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Português">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="category-section">
+                    <h3>Novidades</h3>
+                    <div class="thumbnail-grid" id="category-novidades">
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Biologia">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Física">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Matemática">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Redação">
+                        </a>
+                        <a href="catalogo.html" class="thumbnail">
+                            <img src="imagens/exemplo.webp" alt="Curso de Português">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Rodapé -->
+<footer>
+    <p>&copy; 2024 Plataforma CIEM. Todos os direitos e esquerdos.</p>
+    <div class="footer-links">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos de Serviço</a>
+        <a href="#">Ajuda</a>
+    </div>
+    <div class="footer-logo">
+        <img src="imagens/governo.webp" alt="Logo do Governo">
+    </div>
+</footer>
+
+</body>
+</html>

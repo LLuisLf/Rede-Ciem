@@ -1,0 +1,234 @@
+/* Estilo da barra de menu lateral */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente escondida à esquerda */
+    background-color: #2b2b2b;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar-nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffcc00;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.sidebar-nav ul li a:hover {
+    color: #f9f9f9;
+}
+
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+}
+
+.close-btn {
+    font-size: 30px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.main-content {
+    transition: margin-left 0.3s;
+    padding: 20px;
+}
+
+.sidebar.active {
+    left: 0; /* Mostrar a barra lateral quando ativa */
+}
+
+.main-content.shift {
+    margin-left: 250px; /* Ajuste o conteúdo ao abrir a barra lateral */
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content.shift {
+        margin-left: 200px;
+    }
+}
+/* Estilos Gerais da Página */
+body {
+    font-family: Arial, sans-serif;
+    color: #ddd;
+    background: #1e1e1e;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo da Barra Lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: #ddd;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    padding: 10px;
+}
+
+.sidebar-nav a {
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+    background: #444;
+}
+
+/* Estilo do Conteúdo Principal */
+.main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.open-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: #333;
+    color: #ddd;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Estilo da Página de Recepção */
+#recepcao {
+    padding: 20px;
+}
+
+.reception-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reception-intro h1 {
+    font-size: 32px;
+    color: #fff;
+}
+
+.reception-intro p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature-item {
+    background: #444;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.feature-item h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.call-to-action {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.call-to-action h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}

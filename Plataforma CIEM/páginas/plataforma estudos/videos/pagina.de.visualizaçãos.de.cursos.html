@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização de Cursos</title>
+    <link rel="stylesheet" href="videos.css"> 
+    <script src="video.js"></script>
+</head>
+<body>
+    <!-- Início do cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="index.html">Minha Plataforma de Cursos</a> <!-- Logo com link para a página inicial -->
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="modulos.html">Módulos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Botão de alternância de modo escuro -->
+        <button id="toggle-dark-mode">Modo Escuro</button>
+    </header>
+    <!-- Fim do cabeçalho -->
+    <!-- Início do conteúdo principal -->
+    <main class="course-content">
+        <section class="course-header">
+            <h1>Ciências da Natureza: Biologia</h1> <!-- Título do curso -->
+            <p class="course-description">
+                Aprenda os fundamentos da biologia, desde as células até os ecossistemas, através de vídeos explicativos.
+            </p>
+        </section>
+
+        <!-- Área de vídeo principal -->
+        <section class="video-section">
+            <h2>Aula 1: Introdução à Biologia</h2>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/link_do_video" 
+                title="Vídeo do curso" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- Lista de vídeos relacionados -->
+        <section class="related-videos">
+            <h2>Mais aulas deste curso</h2>
+            <ul class="video-list">
+                <li>
+                    <a href="https://www.youtube.com/embed/link_do_video_2" target="_blank">
+                        Aula 2: Estrutura Celular
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/embed/link_do_video_3" target="_blank">
+                        Aula 3: Genética e Hereditariedade
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/embed/link_do_video_4" target="_blank">
+                        Aula 4: Ecossistemas
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/embed/link_do_video_5" target="_blank">
+                        Aula 5: Evolução e Seleção Natural
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- Seção de comentários e avaliações -->
+    <section class="course-feedback">
+        <h2>Comentários e Avaliações</h2>
+
+        <!-- Formulário para envio de comentário -->
+        <form class="comment-form">
+            <textarea name="comment" id="comment" rows="4" placeholder="Deixe seu comentário aqui..."></textarea>
+            <button type="submit" class="btn-submit">Enviar comentário</button>
+        </form>
+
+        <!-- Lista de comentários -->
+        <div class="comments-list">
+            <div class="comment">
+                <p><strong>João:</strong> Excelente aula, ajudou muito a entender a matéria!</p>
+            </div>
+            <div class="comment">
+                <p><strong>Maria:</strong> Adorei o conteúdo, bastante claro e objetivo.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma plataforma de estudos focada em oferecer conteúdo de qualidade para estudantes de diversas áreas. Nossos cursos são cuidadosamente selecionados para garantir o melhor aprendizado.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#">Termos de Serviço</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contato</h4>
+                <p>Email: suporte@plataforma.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Plataforma de Estudos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
